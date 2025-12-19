@@ -17,6 +17,8 @@
     frame #11: 0x00005555555b83d9 iree-run-module`_start + 41
 
 ```
+## dispatch
+iree_hal_command_buffer_vtable_t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NzIxODM1Nl19
+eyJoaXN0b3J5IjpbLTg1NjU1MDcwNCwxMjg3MjE4MzU2XX0=
 -->
