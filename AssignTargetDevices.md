@@ -18,7 +18,6 @@
       compiled into the runtime.
 
       Examples using the canonical flag:
-      ```mlir
       // Two devices, one the local host device and the other a Vulkan device:
       --iree-hal-target-device=local
       --iree-hal-target-device=vulkan
@@ -38,16 +37,15 @@
       // Named device for defining a reference by #hal.device.promise<@some_name>:
       --iree-hal-target-device=some_name=vulkan
       ```
-      ```
+      
 ## MaterialTargetDevicesPass
 ```bash
 Materializes global `!hal.device` ops for the devices specified by the
       `hal.device.targets` attribute on the module. An optional default device can
       be specified to assign to ops that do not have a default device specified.
-
-```
+ ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzc4NDkzMjgsLTEzNDI5MTEzMywxMT
+eyJoaXN0b3J5IjpbLTE3NjI4MTYyNTQsLTEzNDI5MTEzMywxMT
 g2NTIyOTYxXX0=
 -->
