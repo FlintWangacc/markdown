@@ -39,7 +39,7 @@
       --iree-hal-target-device=some_name=vulkan
       ```
 
-```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjUyMjk2MV19
+eyJoaXN0b3J5IjpbLTEzNDI5MTEzMywxMTg2NTIyOTYxXX0=
 -->
