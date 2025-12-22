@@ -1,5 +1,5 @@
-# AssignTargetDevicesPass
-## Pass description
+# HAL Passes
+## AssignDevices
 ```mlir
      Assigns target HAL devices to the module based on the given list of target
       specifications.
@@ -38,8 +38,16 @@
       // Named device for defining a reference by #hal.device.promise<@some_name>:
       --iree-hal-target-device=some_name=vulkan
       ```
+      ```
+## MaterialTargetDevicesPass
+```bash
+Materializes global `!hal.device` ops for the devices specified by the
+      `hal.device.targets` attribute on the module. An optional default device can
+      be specified to assign to ops that do not have a default device specified.
 
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDI5MTEzMywxMTg2NTIyOTYxXX0=
+eyJoaXN0b3J5IjpbLTEzMzc4NDkzMjgsLTEzNDI5MTEzMywxMT
+g2NTIyOTYxXX0=
 -->
