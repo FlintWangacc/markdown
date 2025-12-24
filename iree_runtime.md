@@ -19,6 +19,14 @@
 ```
 ## dispatch
 iree_hal_command_buffer_vtable_t
+
+## vm abi
+**IREE** provides several VM ABIs. These ABIs are located in the file `runtime/src/iree/modules/hal/module.c` and are encapsulated using the macro `IREE_VM_ABI_EXPORT`.
+| Function Name | Description |
+|---------------|-------------|
+| `function_a`  | Description of what function A does |
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NjU1MDcwNCwxMjg3MjE4MzU2XX0=
+eyJoaXN0b3J5IjpbMzEwMjQxMTc5LC04NTY1NTA3MDQsMTI4Nz
+IxODM1Nl19
 -->
