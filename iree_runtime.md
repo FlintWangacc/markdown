@@ -29,6 +29,5 @@ iree_hal_command_buffer_vtable_t
 ## hal.devices.get
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NjI2NTk3LC04NTY1NTA3MDQsMTI4Nz
-IxODM1Nl19
+eyJoaXN0b3J5IjpbODk2NjI2NTk3XX0=
 -->
