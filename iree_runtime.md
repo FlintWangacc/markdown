@@ -26,7 +26,9 @@ iree_hal_command_buffer_vtable_t
 |---------------|-------------|
 | `iree_hal_module_devices_count`  | return the number of hal devices |
 
+## hal.devices.get
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc0OTU2NjcsLTg1NjU1MDcwNCwxMjg3Mj
-E4MzU2XX0=
+eyJoaXN0b3J5IjpbODk2NjI2NTk3LC04NTY1NTA3MDQsMTI4Nz
+IxODM1Nl19
 -->
