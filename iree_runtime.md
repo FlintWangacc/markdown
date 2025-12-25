@@ -27,8 +27,9 @@ iree_hal_command_buffer_vtable_t
 | `iree_hal_module_devices_count`  | return the number of hal devices |  NA  |
 | `iree_hal_module_devices_get` |  NA | `hal.devices.get`|
 
-## hal.devices.get
-
+## note
+iree virtual machine will call import functions for management tasks.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NDQ4NjU4Nyw4OTY2MjY1OTddfQ==
+eyJoaXN0b3J5IjpbLTE2MTc0MTQyMDIsLTQ4NDQ4NjU4Nyw4OT
+Y2MjY1OTddfQ==
 -->
