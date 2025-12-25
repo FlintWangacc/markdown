@@ -22,12 +22,13 @@ iree_hal_command_buffer_vtable_t
 
 ## vm abi
 **IREE** provides several VM ABIs. These ABIs are located in the file `runtime/src/iree/modules/hal/module.c` and are encapsulated using the macro `IREE_VM_ABI_EXPORT`.
-| Function Name | Description |
-|---------------|-------------|
-| `iree_hal_module_devices_count`  | return the number of hal devices |
+| Function Name |Description| vm bytecode |
+|---------------|-------------|-------------|
+| `iree_hal_module_devices_count`  | return the number of hal devices |  NA  |
+| `iree_hal_module_devices_get` |  NA | `hal.devices.get`|
 
 ## hal.devices.get
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NjI2NTk3XX0=
+eyJoaXN0b3J5IjpbLTQ4NDQ4NjU4Nyw4OTY2MjY1OTddfQ==
 -->
