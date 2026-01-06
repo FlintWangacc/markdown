@@ -10,6 +10,8 @@ stream dialect seems to consider execution stream. Some stream run on virtual ma
 third_party/llvm-project/mlir/lib/Pass/Pass.cpp:549
 third_party/llvm-project/mlir/lib/IR/MLIRContext.cpp:598
 ```
+## Pass
+### TensorPadToTensorInsertSlicePass
 
 ## Tricks
 ### How to disable multi-thread in mlir
@@ -17,5 +19,5 @@ third_party/llvm-project/mlir/lib/IR/MLIRContext.cpp:598
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjkzMzNdfQ==
+eyJoaXN0b3J5IjpbLTgyMTk5MzMyOSwtODAyOTMzM119
 -->
