@@ -10,6 +10,13 @@ stream dialect seems to consider execution stream. Some stream run on virtual ma
 third_party/llvm-project/mlir/lib/Pass/Pass.cpp:549
 third_party/llvm-project/mlir/lib/IR/MLIRContext.cpp:598
 ```
+
+## Tricks
+### How to disable multi-thread in mlir
+  Set the flag specifying if multi-threading is disabled by the context.
+   The command line debugging flag `--mlir-disable-threading` is overriding
+   this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjM3NjYyMjEsOTE3NzYyMDI3XX0=
+eyJoaXN0b3J5IjpbLTgwMjkzMzMsLTE2NjM3NjYyMjEsOTE3Nz
+YyMDI3XX0=
 -->
