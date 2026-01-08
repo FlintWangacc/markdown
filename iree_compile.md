@@ -35,11 +35,20 @@ Line: 96
 ##### CanonicalizePass
 file: compiler/src/iree/compiler/Dialect/Flow/Transforms/Canonicalize.cpp
 line: 110
+
+## How iree create executable kernel
+
+### FormDispatchRegionsPass
+location:
+```bash
+compiler/src/iree/compiler/DispatchCreation/FormDispatchRegions.cpp
+
+```
 ## Tricks
 ### How to disable multi-thread in mlir
   Set the flag specifying if multi-threading is disabled by the context.
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjUzNjgwOV19
+eyJoaXN0b3J5IjpbLTEwOTAwNzg3MzYsMTIyMjUzNjgwOV19
 -->
