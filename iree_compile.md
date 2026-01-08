@@ -13,7 +13,7 @@ third_party/llvm-project/mlir/lib/IR/MLIRContext.cpp:598
 ## Pass
 ### ConvertToFlow
 ConvertToFlow contains several rewrite pattern
-
+| Pattern | func
 #### TensorPadToTensorInsertSlicePass
 ```bash
 Full path: /home/hmsjwzb/work/pytorch/iree/compiler/src/iree/compiler/DispatchCreation/TensorPadToTensorInsertSlice.cpp
@@ -28,6 +28,5 @@ line: 110
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTI2Mzk1OTEsLTEwNjQxNjQ5MjFdfQ
-==
+eyJoaXN0b3J5IjpbMzk3MDUwNDYxLC0xMDY0MTY0OTIxXX0=
 -->
