@@ -20,6 +20,9 @@ ConvertToFlow contains several rewrite pattern
 |ConvertTensorExtBitcastPattern||
 |ConvertTensorCastPattern||
 |ConvertTensorConcatPattern||
+|ConvertTensorExtractPattern||
+|ConvertTensorExtractSlicePattern||
+|ConvertTensorInsertSlicePattern|Convert tensor.insert_slice ops into flow.tensor.update ops where possible.|
 |||
 #### TensorPadToTensorInsertSlicePass
 ```bash
@@ -35,5 +38,6 @@ line: 110
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3OTQ1MzQ0NiwtMTA2NDE2NDkyMV19
+eyJoaXN0b3J5IjpbLTE5NTA3MjkyNjEsLTEwNjQxNjQ5MjFdfQ
+==
 -->
