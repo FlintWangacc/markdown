@@ -42,7 +42,7 @@ line: 110
 location:
 ```bash
 compiler/src/iree/compiler/DispatchCreation/FormDispatchRegions.cpp
-
+FormDispatchRegionsPass::runOnOperation
 ```
 ## Tricks
 ### How to disable multi-thread in mlir
@@ -50,5 +50,5 @@ compiler/src/iree/compiler/DispatchCreation/FormDispatchRegions.cpp
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTAwNzg3MzYsMTIyMjUzNjgwOV19
+eyJoaXN0b3J5IjpbLTI3MTUxMzgxLDEyMjI1MzY4MDldfQ==
 -->
