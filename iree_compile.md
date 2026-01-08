@@ -23,7 +23,9 @@ ConvertToFlow contains several rewrite pattern
 |ConvertTensorExtractPattern||
 |ConvertTensorExtractSlicePattern||
 |ConvertTensorInsertSlicePattern|Convert tensor.insert_slice ops into flow.tensor.update ops where possible.|
-|||
+|ConvertTensorFromElementsPattern||
+|ConvertTensorDialectReshapeOpPattern|Convert tensor.reshape ops into flow.tensor.reshape ops where possible.|
+
 #### TensorPadToTensorInsertSlicePass
 ```bash
 Full path: /home/hmsjwzb/work/pytorch/iree/compiler/src/iree/compiler/DispatchCreation/TensorPadToTensorInsertSlice.cpp
@@ -38,6 +40,5 @@ line: 110
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTA3MjkyNjEsLTEwNjQxNjQ5MjFdfQ
-==
+eyJoaXN0b3J5IjpbLTYxNjU2NTI0NiwtMTA2NDE2NDkyMV19
 -->
