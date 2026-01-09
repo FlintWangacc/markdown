@@ -43,6 +43,10 @@ location:
 ```bash
 compiler/src/iree/compiler/DispatchCreation/FormDispatchRegions.cpp
 FormDispatchRegionsPass::runOnOperation
+
+Full path: /home/hmsjwzb/work/pytorch/iree/compiler/src/iree/compiler/DispatchCreation/FormDispatchRegions.cpp
+Line: 1011
+
 ```
 ## Tricks
 ### How to disable multi-thread in mlir
@@ -50,5 +54,5 @@ FormDispatchRegionsPass::runOnOperation
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MTUxMzgxXX0=
+eyJoaXN0b3J5IjpbMTU2OTUyMzM4OF19
 -->
