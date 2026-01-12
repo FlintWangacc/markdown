@@ -53,12 +53,16 @@ Line: 1011
 TranslateTargetExecutableVariantsPass
 
 ### location
+```bash
+Full path: /home/hmsjwzb/work/pytorch/iree/compiler/src/iree/compiler/Dialect/HAL/Transforms/TranslateExecutables.cpp
+Line: 76
 
+```
 ## Tricks
 ### How to disable multi-thread in mlir
   Set the flag specifying if multi-threading is disabled by the context.
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NjU3NDc1NiwxNTY5NTIzMzg4XX0=
+eyJoaXN0b3J5IjpbLTY3MDc4MDg0MF19
 -->
