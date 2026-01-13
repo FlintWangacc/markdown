@@ -85,9 +85,11 @@ Line: 76
   <li>Step 5:Greedily fuse parallel loops and hoist from serial loops.</li>
   <li>Step 6: Lower special ops and vectorize.</li>
   <li>Step 7: Bufferize</li>
+  <li>Step 8. Resolve remaining parallel loops.</li>
+  <li>Step 9:Remaining post-bufferization optimizations/lowerings.</li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjgzNjc5MiwtMTk4Mjg5MTA4NCw0NT
-YwMjc2MTAsNzQ5Mzk2ODA0LDExMTIwOTU3NTcsLTY3MDc4MDg0
-MF19
+eyJoaXN0b3J5IjpbNzk4MjQwNjY3LC0xMTI4MzY3OTIsLTE5OD
+I4OTEwODQsNDU2MDI3NjEwLDc0OTM5NjgwNCwxMTEyMDk1NzU3
+LC02NzA3ODA4NDBdfQ==
 -->
