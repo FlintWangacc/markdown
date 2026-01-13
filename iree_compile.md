@@ -59,6 +59,8 @@ Line: 76
 ```
 ### subpass
 1. HoistExecutableObjectsPass
+	- compiler/src/iree/compiler/Dialect/HAL/Transforms/HoistExecutableObjects.cpp
+
 
 ## Tricks
 ### How to disable multi-thread in mlir
@@ -66,5 +68,6 @@ Line: 76
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMjA5NTc1NywtNjcwNzgwODQwXX0=
+eyJoaXN0b3J5IjpbNzQ5Mzk2ODA0LDExMTIwOTU3NTcsLTY3MD
+c4MDg0MF19
 -->
