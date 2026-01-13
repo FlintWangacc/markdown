@@ -63,7 +63,8 @@ Line: 76
 2. pipeline
 	- LowerExecutableUsingTransformDialectPass
 		- `compiler/src/iree/compiler/Codegen/Common/LowerExecutableUsingTransformDialect.cpp`
-		-  
+		- passline
+			-  LLVMGPULowerExecutableTargetPass
 
 ## Tricks
 ### How to disable multi-thread in mlir
@@ -71,6 +72,6 @@ Line: 76
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU2MDI3NjEwLDc0OTM5NjgwNCwxMTEyMD
-k1NzU3LC02NzA3ODA4NDBdfQ==
+eyJoaXN0b3J5IjpbLTE5ODI4OTEwODQsNDU2MDI3NjEwLDc0OT
+M5NjgwNCwxMTEyMDk1NzU3LC02NzA3ODA4NDBdfQ==
 -->
