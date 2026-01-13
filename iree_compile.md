@@ -62,6 +62,8 @@ Line: 76
 	- compiler/src/iree/compiler/Dialect/HAL/Transforms/HoistExecutableObjects.cpp
 2. pipeline
 	- LowerExecutableUsingTransformDialectPass
+		- `compiler/src/iree/compiler/Codegen/Common/LowerExecutableUsingTransformDialect.cpp`
+		-  
 
 ## Tricks
 ### How to disable multi-thread in mlir
@@ -69,6 +71,6 @@ Line: 76
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIxNjEyMzQ1LDc0OTM5NjgwNCwxMTEyMD
+eyJoaXN0b3J5IjpbNDU2MDI3NjEwLDc0OTM5NjgwNCwxMTEyMD
 k1NzU3LC02NzA3ODA4NDBdfQ==
 -->
