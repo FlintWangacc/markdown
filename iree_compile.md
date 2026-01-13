@@ -74,13 +74,14 @@ Line: 76
 
 ## addGPUTileAndFusePassPipeline
 <ol start="0">
-  <li>Step 0: Apply any user annotated lowering strategies. This runs first as steps 1 - 4 are essentially applying patterns based on the lowering config,</li>
-  <li>Step 1: Prepare your data</li>
+  <li>Step 0: Apply any user annotated lowering strategies. This runs first as steps 1 - 4 are essentially applying patterns based on the lowering config, so a custom strategy runs first circumventing that.</li>
+  <li>Step 1: Promote matmul operands and pack to intrinsic shapes.</li>
+  <li>Step 1.5: Expand result shapes of MultiMmaOps before tiling, and propagate reshapes to the function boundary.
   <li>Step 2: Run the analysis</li>
   <li>Step 3: Review results</li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzYwNTAyOTYsLTE5ODI4OTEwODQsND
-U2MDI3NjEwLDc0OTM5NjgwNCwxMTEyMDk1NzU3LC02NzA3ODA4
-NDBdfQ==
+eyJoaXN0b3J5IjpbMTM0MjEyMTc4OCwtMTk4Mjg5MTA4NCw0NT
+YwMjc2MTAsNzQ5Mzk2ODA0LDExMTIwOTU3NTcsLTY3MDc4MDg0
+MF19
 -->
