@@ -80,10 +80,12 @@ Line: 76
   <li>Step 2: Tile and fuse tileable ops to reduction loops.</li>
   <li>Step 3: Decompose pack and unpack ops and propagate the resulting reshapes.</li>
   <li>Step 3.5: Expand the inner dimensions of MultiMma ops in preparation for distribution to lanes.</li>
-  <li>
+  <li>Step 4: Tile and fuse tileable ops to subgroups/threads.</li>
+  <li>Step 4.5:Things that need to happen right after distribution to threads. </li>
+  <li>Step 5:Greedily fuse parallel loops and hoist from serial loops.</li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzEwMjUyOTgsLTE5ODI4OTEwODQsND
+eyJoaXN0b3J5IjpbLTE5ODg2MjgzMTcsLTE5ODI4OTEwODQsND
 U2MDI3NjEwLDc0OTM5NjgwNCwxMTEyMDk1NzU3LC02NzA3ODA4
 NDBdfQ==
 -->
