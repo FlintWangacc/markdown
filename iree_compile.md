@@ -71,7 +71,11 @@ Line: 76
   Set the flag specifying if multi-threading is disabled by the context.
    The command line debugging flag `--mlir-disable-threading` is overriding
    this call and making it a no-op!
+
+## addGPUTileAndFusePassPipeline
+1.  Step 0. Apply any user annotated lowering strategies. This runs first as
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODI4OTEwODQsNDU2MDI3NjEwLDc0OT
-M5NjgwNCwxMTEyMDk1NzU3LC02NzA3ODA4NDBdfQ==
+eyJoaXN0b3J5IjpbOTM5NDY0NTc0LC0xOTgyODkxMDg0LDQ1Nj
+AyNzYxMCw3NDkzOTY4MDQsMTExMjA5NTc1NywtNjcwNzgwODQw
+XX0=
 -->
