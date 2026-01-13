@@ -83,9 +83,11 @@ Line: 76
   <li>Step 4: Tile and fuse tileable ops to subgroups/threads.</li>
   <li>Step 4.5:Things that need to happen right after distribution to threads. </li>
   <li>Step 5:Greedily fuse parallel loops and hoist from serial loops.</li>
+  <li>Step 6: Lower special ops and vectorize.</li>
+  <li>Step 7: Bufferize</li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODg2MjgzMTcsLTE5ODI4OTEwODQsND
-U2MDI3NjEwLDc0OTM5NjgwNCwxMTEyMDk1NzU3LC02NzA3ODA4
-NDBdfQ==
+eyJoaXN0b3J5IjpbLTExMjgzNjc5MiwtMTk4Mjg5MTA4NCw0NT
+YwMjc2MTAsNzQ5Mzk2ODA0LDExMTIwOTU3NTcsLTY3MDc4MDg0
+MF19
 -->
