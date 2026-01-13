@@ -76,12 +76,14 @@ Line: 76
 <ol start="0">
   <li>Step 0: Apply any user annotated lowering strategies. This runs first as steps 1 - 4 are essentially applying patterns based on the lowering config, so a custom strategy runs first circumventing that.</li>
   <li>Step 1: Promote matmul operands and pack to intrinsic shapes.</li>
-  <li>Step 1.5: Expand result shapes of MultiMmaOps before tiling, and propagate reshapes to the function boundary.
-  <li>Step 2: Run the analysis</li>
-  <li>Step 3: Review results</li>
+  <li>Step 1.5: Expand result shapes of MultiMmaOps before tiling, and propagate reshapes to the function boundary.u
+  <li>Step 2: Tile and fuse tileable ops to reduction loops.</li>
+  <li>Step 3: Decompose pack and unpack ops and propagate the resulting reshapes.</li>
+  <li>Step 3.5: Expand the inner dimensions of MultiMma ops in preparation for distribution to lanes.</li>
+  <li>
 </ol>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MjEyMTc4OCwtMTk4Mjg5MTA4NCw0NT
-YwMjc2MTAsNzQ5Mzk2ODA0LDExMTIwOTU3NTcsLTY3MDc4MDg0
-MF19
+eyJoaXN0b3J5IjpbLTE5NzEwMjUyOTgsLTE5ODI4OTEwODQsND
+U2MDI3NjEwLDc0OTM5NjgwNCwxMTEyMDk1NzU3LC02NzA3ODA4
+NDBdfQ==
 -->
