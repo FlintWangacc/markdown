@@ -32,6 +32,8 @@ iree_hal_command_buffer_vtable_t
 iree virtual machine will call import functions for management tasks.
 
 ## iree_hal_executable_cache_prepare_executable
+
+## iree_io_parameters_module_load
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTk3MDg4Ml19
+eyJoaXN0b3J5IjpbLTE3OTcxNTU2OV19
 -->
