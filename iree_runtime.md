@@ -58,8 +58,8 @@ iree virtual machine will call import functions for management tasks.
     frame #18: 0x00007ffff7a29d90 libc.so.6`__libc_start_call_main(main=(iree-run-module`main at iree-run-module-main.c:13), argc=6, argv=0x00007fffffffc068) at libc_start_call_main.h:58:16
     frame #19: 0x00007ffff7a29e40 libc.so.6`__libc_start_main_impl(main=(iree-run-module`main at iree-run-module-main.c:13), argc=6, argv=0x00007fffffffc068, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffffffc058) at libc-start.c:392:3
     frame #20: 0x00005555555b83d9 iree-run-module`_start + 41
-
 ```
+iree_hal_hip_device_queue_alloca
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDk2ODg2NTFdfQ==
+eyJoaXN0b3J5IjpbMTUyMDI3NTIwXX0=
 -->
