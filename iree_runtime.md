@@ -74,5 +74,5 @@ iree_hal_hip_device_queue_alloca
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MjkwNTMwNSwtMjEyNzczNzcwMF19
+eyJoaXN0b3J5IjpbMTA4MjkwNTMwNV19
 -->
