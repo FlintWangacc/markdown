@@ -62,6 +62,17 @@ iree virtual machine will call import functions for management tasks.
 
 ```
 iree_hal_hip_device_queue_alloca
+
+```bash
+(lldb) bt
+* thread #6, name = 'iree-run-module', stop reason = step over
+  * frame #0: 0x00005555555da323 iree-run-module`iree_hal_hip_device_perform_buffer_operation_now(user_data=0x0000555555f0e180, status=0x0000000000000000) at hip_device.c:1482:7
+    frame #1: 0x00005555555dee69 iree-run-module`iree_hal_hip_dispatch_thread_main(param=0x0000555555fa4750) at dispatch_thread.c:66:16
+    frame #2: 0x0000555555639359 iree-run-module`iree_thread_start_routine(param=0x0000555555a27af0) at threading_pthreads.c:119:29
+    frame #3: 0x00007ffff7a94ac3 libc.so.6`start_thread(arg=<unavailable>) at pthread_create.c:442:8
+    frame #4: 0x00007ffff7b268c0 libc.so.6`__clone3 at clone3.S:81
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjc3Mzc3MDBdfQ==
+eyJoaXN0b3J5IjpbMTA4MjkwNTMwNSwtMjEyNzczNzcwMF19
 -->
