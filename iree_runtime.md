@@ -73,6 +73,8 @@ iree_hal_hip_device_queue_alloca
     frame #4: 0x00007ffff7b268c0 libc.so.6`__clone3 at clone3.S:81
 
 ```
+iree_vm_bytecode_dispatch
+iree_io_parameters_module_load
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MjkwNTMwNV19
+eyJoaXN0b3J5IjpbLTk3NjM5OTI5NF19
 -->
