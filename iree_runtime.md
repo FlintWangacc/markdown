@@ -75,6 +75,8 @@ iree_hal_hip_device_queue_alloca
 ```
 iree_vm_bytecode_dispatch
 iree_io_parameters_module_load
+
+iree_vm_abi_rIrrrIiirrr_t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjM5OTI5NF19
+eyJoaXN0b3J5IjpbMTI2OTk3NTYyMiwtOTc2Mzk5Mjk0XX0=
 -->
