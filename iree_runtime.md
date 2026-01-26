@@ -77,6 +77,34 @@ iree_vm_bytecode_dispatch
 iree_io_parameters_module_load
 
 iree_vm_abi_rIrrrIiirrr_t
+
+```bash
+(lldb) bt
+* thread #1, name = 'iree-run-module', stop reason = step over
+  * frame #0: 0x00005555555ec7df iree-run-module`iree_io_parameter_index_provider_load(base_provider=0x0000555555789cd0, device=0x00005555558f1680, queue_affinity=18446744073709551615, wait_semaphore_list=iree_hal_semaphore_list_t @ 0x00007fffffff51b0, signal_semaphore_list=iree_hal_semaphore_list_t @ 0x00007fffffff51c8, source_scope=(data = "global", size = 6), target_params=(usage = 527363, access = 0, type = 48, queue_affinity = 18446744073709551615, min_alignment = 0), count=3, enumerator=iree_io_parameter_enumerator_t @ 0x00007fffffff5200, emitter=iree_io_parameter_emitter_t @ 0x00007fffffff5210) at parameter_index_provider.c:801:17
+    frame #1: 0x00005555555f28bb iree-run-module`iree_io_parameter_provider_load(provider=0x0000555555789cd0, device=0x00005555558f1680, queue_affinity=18446744073709551615, wait_semaphore_list=iree_hal_semaphore_list_t @ 0x00007fffffff52c0, signal_semaphore_list=iree_hal_semaphore_list_t @ 0x00007fffffff52d8, source_scope=(data = "global", size = 6), target_params=(usage = 527363, access = 0, type = 48, queue_affinity = 18446744073709551615, min_alignment = 0), count=3, enumerator=iree_io_parameter_enumerator_t @ 0x00007fffffff5310, emitter=iree_io_parameter_emitter_t @ 0x00007fffffff5320) at parameter_provider.c:66:26
+    frame #2: 0x00005555555f1912 iree-run-module`iree_io_parameters_module_load(stack=0x00007fffffff96a0, module=0x0000555555789d70, state=0x00005555559bf040, args=0x00007fffffff5820, rets=0x00007fffffff5810) at module.c:324:14
+    frame #3: 0x0000555555766a20 iree-run-module`iree_vm_shim_rIrrrIiirrr_r(stack=0x00007fffffff96a0, flags=1, args_storage=(data = "\x80\U00000016\x8fUUU", data_length = 136), rets_storage=(data = "", data_length = 16), target_fn=(iree-run-module`iree_io_parameters_module_load at module.c:272), module=0x0000555555789d70, module_state=0x00005555559bf040) at shims.c:80:1
+    frame #4: 0x0000555555760c44 iree-run-module`iree_vm_native_module_issue_call(module=0x0000555555789d70, stack=0x00007fffffff96a0, callee_frame=0x00007fffffff9870, flags=1, args_storage=(data = "\x80\U00000016\x8fUUU", data_length = 136), rets_storage=(data = "", data_length = 16)) at native_module.c:364:7
+    frame #5: 0x0000555555760820 iree-run-module`iree_vm_native_module_begin_call(self=0x0000555555789d70, stack=0x00007fffffff96a0, call=iree_vm_function_call_t @ 0x00007fffffff56e0) at native_module.c:420:10
+    frame #6: 0x00005555556c8f30 iree-run-module`iree_vm_bytecode_issue_import_call(stack=0x00007fffffff96a0, call=iree_vm_function_call_t @ 0x00007fffffff57e0, cconv_results=(data = "r", size = 1), dst_reg_list=0x000055555578cc6c, out_caller_frame=0x00007fffffff9378, out_caller_registers=0x00007fffffff9390) at dispatch.c:459:7
+    frame #7: 0x00005555556c6a74 iree-run-module`iree_vm_bytecode_call_import(stack=0x00007fffffff96a0, module_state=0x00005555559781f0, import_ordinal=2147483668, caller_registers=iree_vm_registers_t @ 0x00007fffffff5928, src_reg_list=0x000055555578cc54, dst_reg_list=0x000055555578cc6c, out_caller_frame=0x00007fffffff9378, out_caller_registers=0x00007fffffff9390) at dispatch.c:575:10
+    frame #8: 0x00005555556ba926 iree-run-module`iree_vm_bytecode_dispatch(stack=0x00007fffffff96a0, module=0x0000555555789710, current_frame=0x00007fffffff9710, regs=iree_vm_registers_t @ 0x00007fffffff9390, call_results=(data = 0x0000000000000000, data_length = 0)) at dispatch.c:1708:10
+    frame #9: 0x00005555556adc30 iree-run-module`iree_vm_bytecode_dispatch_begin(stack=0x00007fffffff96a0, module=0x0000555555789710, call=iree_vm_function_call_t @ 0x00007fffffff9470, cconv_arguments=(data = 0x0000000000000000, size = 0), cconv_results=(data = 0x0000000000000000, size = 0)) at dispatch.c:643:26
+    frame #10: 0x00005555556a9215 iree-run-module`iree_vm_bytecode_module_begin_call(self=0x0000555555789710, stack=0x00007fffffff96a0, call=iree_vm_function_call_t @ 0x00007fffffff9540) at module.c:850:10
+    frame #11: 0x0000555555756f51 iree-run-module`iree_vm_context_run_function(context=0x0000555555f47970, stack=0x00007fffffff96a0, module=0x0000555555789710, function_name=(data = "__init", size = 6)) at context.c:91:12
+    frame #12: 0x0000555555756151 iree-run-module`iree_vm_context_register_modules(context=0x0000555555f47970, module_count=3, modules=0x00007fffffffb828) at context.c:596:14
+    frame #13: 0x0000555555755aa9 iree-run-module`iree_vm_context_create_with_modules(instance=0x00005555557892b0, flags=0, module_count=3, modules=0x00007fffffffb828, allocator=iree_allocator_t @ 0x00007fffffffb788, out_context=0x00007fffffffb7f0) at context.c:340:7
+    frame #14: 0x00005555555d6a41 iree-run-module`iree_tooling_create_context_from_flags(instance=0x00005555557892b0, user_module_count=1, user_modules=0x00007fffffffbb60, default_device_uri=(data = 0x0000000000000000, size = 0), host_allocator=iree_allocator_t @ 0x00007fffffffba80, out_context=0x00007fffffffbaf8, out_device=0x00007fffffffbaf0, out_device_allocator=0x00007fffffffbae8) at context_util.c:658:26
+    frame #15: 0x00005555555e4d62 iree-run-module`iree_tooling_create_run_context(instance=0x00005555557892b0, default_device_uri=(data = 0x0000000000000000, size = 0), module_contents=(data = 0x0000000000000000, data_length = 0), host_allocator=iree_allocator_t @ 0x00007fffffffbdb0, out_context=0x00007fffffffbe38, out_function=0x00007fffffffbe28, out_device=0x00007fffffffbe20, out_device_allocator=0x00007fffffffbe18) at run_module.c:151:9
+    frame #16: 0x00005555555e48e8 iree-run-module`iree_tooling_run_module_with_data(instance=0x00005555557892b0, default_device_uri=(data = 0x0000000000000000, size = 0), module_contents=(data = 0x0000000000000000, data_length = 0), host_allocator=iree_allocator_t @ 0x00007fffffffbea0, out_exit_code=0x00007fffffffbf14) at run_module.c:405:3
+    frame #17: 0x00005555555e482b iree-run-module`iree_tooling_run_module_from_flags(instance=0x00005555557892b0, host_allocator=iree_allocator_t @ 0x00007fffffffbef0, out_exit_code=0x00007fffffffbf14) at run_module.c:388:10
+    frame #18: 0x00005555555cf851 iree-run-module`main(argc=1, argv=0x00007fffffffc068) at iree-run-module-main.c:43:14
+    frame #19: 0x00007ffff7a29d90 libc.so.6`__libc_start_call_main(main=(iree-run-module`main at iree-run-module-main.c:13), argc=6, argv=0x00007fffffffc068) at libc_start_call_main.h:58:16
+    frame #20: 0x00007ffff7a29e40 libc.so.6`__libc_start_main_impl(main=(iree-run-module`main at iree-run-module-main.c:13), argc=6, argv=0x00007fffffffc068, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffffffc058) at libc-start.c:392:3
+    frame #21: 0x00005555555cf709 iree-run-module`_start + 41
+```
+iree_io_parameter_op_batch_enqueue_alloca
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2OTk3NTYyMl19
+eyJoaXN0b3J5IjpbMTI1Nzk1MDY2NF19
 -->
