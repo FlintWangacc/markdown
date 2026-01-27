@@ -105,6 +105,8 @@ iree_vm_abi_rIrrrIiirrr_t
     frame #21: 0x00005555555cf709 iree-run-module`_start + 41
 ```
 iree_io_parameter_op_batch_enqueue_alloca
+
+device.c:243:17
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1Nzk1MDY2NF19
+eyJoaXN0b3J5IjpbLTE0MzM3MTk1OTgsMTI1Nzk1MDY2NF19
 -->
