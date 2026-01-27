@@ -107,7 +107,16 @@ iree_vm_abi_rIrrrIiirrr_t
 iree_io_parameter_op_batch_enqueue_alloca
 
 device.c:243
+```bash
+(lldb) bt
+* thread #7, name = 'iree-run-module', stop reason = step over
+  * frame #0: 0x000055555560c2e3 iree-run-module`iree_hal_hip_device_perform_queue_read_now(user_data=0x0000555555fe6450, status=0x0000000000000000) at hip_device.c:2068:31
+    frame #1: 0x000055555561224d iree-run-module`iree_hal_hip_dispatch_thread_main(param=0x0000555555ed9600) at dispatch_thread.c:66:16
+    frame #2: 0x000055555569e205 iree-run-module`iree_thread_start_routine(param=0x0000555555f47f20) at threading_pthreads.c:119:29
+    frame #3: 0x00007ffff7a94ac3 libc.so.6`start_thread(arg=<unavailable>) at pthread_create.c:442:8
+    frame #4: 0x00007ffff7b268c0 libc.so.6`__clone3 at clone3.S:81
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMDk4ODk0NCwxMjU3OTUwNjY0XX0=
+eyJoaXN0b3J5IjpbMTA1NzUwMDQzNV19
 -->
