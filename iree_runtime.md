@@ -119,7 +119,9 @@ device.c:243
 ```
 
 ## IREE_HAL objects on hip platform
-| `iree_hal_semaphore_t` | 
+| hal object | hip object | location |
+|---------------|-------------|-------------|
+| `iree_hal_semaphore_t` | `iree_hal_hip_semaphore_t`|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MTc1MzE1MiwxMDU3NTAwNDM1XX0=
+eyJoaXN0b3J5IjpbLTE0NjI0Nzk2MjksMTA1NzUwMDQzNV19
 -->
