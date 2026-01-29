@@ -122,7 +122,9 @@ device.c:243
 | hal object | hip object | location |
 |---------------|-------------|-------------|
 | `iree_hal_semaphore_t` | `iree_hal_hip_semaphore_t`| `hal/drivers/hip/event_semaphore.c:124` |
+|||
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNjEwMDMzOCwxMDU3NTAwNDM1XX0=
+eyJoaXN0b3J5IjpbODE2NzA4NDM2LDE4MjYxMDAzMzgsMTA1Nz
+UwMDQzNV19
 -->
