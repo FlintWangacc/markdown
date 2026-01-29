@@ -117,6 +117,9 @@ device.c:243
     frame #4: 0x00007ffff7b268c0 libc.so.6`__clone3 at clone3.S:81
 
 ```
+
+## IREE_HAL objects on hip platform
+| `iree_hal_semaphore_t` | 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzUwMDQzNV19
+eyJoaXN0b3J5IjpbMTI3MTc1MzE1MiwxMDU3NTAwNDM1XX0=
 -->
