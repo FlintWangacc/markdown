@@ -122,10 +122,9 @@ device.c:243
     frame #6: 0x000055555569e205 iree-run-module`iree_thread_start_routine(param=0x0000555555f47f20) at threading_pthreads.c:119:29
     frame #7: 0x00007ffff7a94ac3 libc.so.6`start_thread(arg=<unavailable>) at pthread_create.c:442:8
     frame #8: 0x00007ffff7b268c0 libc.so.6`__clone3 at clone3.S:81
-
-
 ```
 
+parameter_index_provider.c:690
 ## IREE_HAL objects on hip platform
 | hal object | hip object | location |
 |---------------|-------------|-------------|
@@ -133,5 +132,5 @@ device.c:243
 |`iree_hal_buffer_t`| `iree_hal_hip_buffer_t`|`runtime/src/iree/hal/drivers/hip/hip_buffer.c:27`|
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTUwMDE3NzNdfQ==
+eyJoaXN0b3J5IjpbMTYxMjE0NTUwOV19
 -->
