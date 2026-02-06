@@ -131,6 +131,7 @@ parameter_index_provider.c:690
 | `iree_hal_semaphore_t` | `iree_hal_hip_semaphore_t`| `hal/drivers/hip/event_semaphore.c:124` |
 |`iree_hal_buffer_t`| `iree_hal_hip_buffer_t`|`runtime/src/iree/hal/drivers/hip/hip_buffer.c:27`|
 
+`iree_hal_hip_device_make_buffer_callback_data` which initialize the dispatch item for dispatch thread.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjE0NTUwOV19
+eyJoaXN0b3J5IjpbMTI2NDExMzY4LDE2MTIxNDU1MDldfQ==
 -->
