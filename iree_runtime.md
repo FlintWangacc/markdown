@@ -125,6 +125,8 @@ device.c:243
 ```
 
 parameter_index_provider.c:690
+`iree_hal_hip_device_complete_buffer_operation`
+`./runtime/src/iree/io/parameter_index_provider.c:786`
 ## IREE_HAL objects on hip platform
 | hal object | hip object | location |
 |---------------|-------------|-------------|
@@ -133,5 +135,5 @@ parameter_index_provider.c:690
 
 `iree_hal_hip_device_make_buffer_callback_data` which initialize the dispatch item for dispatch thread.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NDExMzY4LDE2MTIxNDU1MDldfQ==
+eyJoaXN0b3J5IjpbLTIxMTA2NzYxOTFdfQ==
 -->
