@@ -134,6 +134,8 @@ parameter_index_provider.c:690
 |`iree_hal_buffer_t`| `iree_hal_hip_buffer_t`|`runtime/src/iree/hal/drivers/hip/hip_buffer.c:27`|
 
 `iree_hal_hip_device_make_buffer_callback_data` which initialize the dispatch item for dispatch thread.
+
+`iree_hal_hip_native_executable_create` debugging
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTA2NzYxOTFdfQ==
+eyJoaXN0b3J5IjpbLTYyMTQ4MzgwXX0=
 -->
