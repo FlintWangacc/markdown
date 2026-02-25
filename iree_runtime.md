@@ -136,6 +136,7 @@ parameter_index_provider.c:690
 `iree_hal_hip_device_make_buffer_callback_data` which initialize the dispatch item for dispatch thread.
 
 `iree_hal_hip_native_executable_create` debugging
+`iree_hal_command_buffer_create` debugging
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTQ4MzgwXX0=
+eyJoaXN0b3J5IjpbLTkwMTc4OTY4NywtNjIxNDgzODBdfQ==
 -->
