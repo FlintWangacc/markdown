@@ -88,6 +88,8 @@ Line: 76
   <li>Step 8. Resolve remaining parallel loops.</li>
   <li>Step 9:Remaining post-bufferization optimizations/lowerings.</li>
 </ol>
+
+compiler/src/iree/compiler/Dialect/HAL/Transforms/SerializeExecutables.cpp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk4MjQwNjY3XX0=
+eyJoaXN0b3J5IjpbLTExNzc1MTA5ODFdfQ==
 -->
